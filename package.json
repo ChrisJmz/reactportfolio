@@ -1,7 +1,7 @@
 {
   "name": "reactportfolio",
   "version": "0.1.0",
-  "homepage": "https://ChrisJmz.github.io/my-portfolio",
+  "homepage": "https://ChrisJmz.github.io/reactportfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",

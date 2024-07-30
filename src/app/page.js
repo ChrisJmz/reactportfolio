@@ -3,8 +3,6 @@
 import Head from "next/head"
 import './globals.css'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
-import Image from 'next/image'
-import cjimenez from '../../public/cjimenez.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react"
