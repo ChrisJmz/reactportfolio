@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/reactportfolio',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/reactportfolio/' : '',
+  assetPrefix: '/reactportfolio/',
 };
 
 export default nextConfig;
