@@ -1,13 +1,11 @@
 {
   "name": "reactportfolio",
   "version": "0.1.0",
-  "homepage": "https://ChrisJmz.github.io/reactportfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "next build && gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
