@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Christian JIMENEZ PORTFOLIO',
-  description: 'developped by me.',
+  title: 'Portfolio.',
+  description: 'CJ portfolio.',
 }
 
 export default function RootLayout({ children }) {

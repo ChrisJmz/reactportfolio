@@ -5,24 +5,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-body {
- margin: 0;
- padding: 0;
- overflow-x: hidden;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
