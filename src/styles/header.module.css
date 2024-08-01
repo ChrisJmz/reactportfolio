@@ -7,23 +7,8 @@
   box-sizing: border-box;
   cursor: pointer;
   mix-blend-mode: difference;
-  z-index: 1;
-  .burger{
-      position: relative;
-      display: flex;
-      gap: 8px;
-      flex-direction: column;
-      padding: 30px;
-      pointer-events: none;
-      &::before, &::after{
-          display: block;
-          content: "";
-          width: 30px;
-          height: 2px;
-          mix-blend-mode: difference;
-          background-color: white;
-      }
-  }
+  z-index: 999;
+}
   .bounds{
       position: absolute;
       font-weight: 700;
@@ -35,5 +20,54 @@
       &:hover{
           transform: scale(2);
     }
+  }
+
+.burger{
+  position: relative;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  padding: 30px;
+  pointer-events: none;
+  &::after, &::before{
+      display: block;
+      content: "";
+      width: 35px;
+      height: 2px;
+      mix-blend-mode: difference;
+      background-color: white;
+      transition: 0.3s;
+      position: relative;
+  }
+}
+
+.burger::after {
+  /* position: relative; */
+  top: 0px;
+}
+
+.burger::before {
+  /* position: relative; */
+  top: 0px;
+}
+
+.burgerActive{
+
+
+  &::after{
+
+      transform: rotate(45deg);
+
+      top: -3px;
+
+  }
+
+
+  &::before{
+
+      transform: rotate(-45deg);
+
+      top: 6px;
+
   }
 }

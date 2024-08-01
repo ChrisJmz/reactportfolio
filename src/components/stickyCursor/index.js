@@ -73,16 +73,23 @@ export default function Index({stickyElement}) {
     animate(cursor.current, { scaleX: 1, scaleY: 1 }, {duration: 0.1}, { type: "spring" })
   }
 
-  useEffect( () => {
-    stickyElement.current.addEventListener("mouseenter", manageMouseOver)
-    stickyElement.current.addEventListener("mouseleave", manageMouseLeave)
-    window.addEventListener("mousemove", manageMouseMove);
-    return () => {
-      stickyElement.current.removeEventListener("mouseenter", manageMouseOver)
-      stickyElement.current.removeEventListener("mouseleave", manageMouseLeave)
-      window.removeEventListener("mousemove", manageMouseMove)
+  useEffect(() => {
+    const currentElement = stickyElement.current;
+  
+    if (currentElement) {
+      currentElement.addEventListener("mouseenter", manageMouseOver);
+      currentElement.addEventListener("mouseleave", manageMouseLeave);
     }
-  }, [isHovered])
+    window.addEventListener("mousemove", manageMouseMove);
+  
+    return () => {
+      if (currentElement) {
+        currentElement.removeEventListener("mouseenter", manageMouseOver);
+        currentElement.removeEventListener("mouseleave", manageMouseLeave);
+      }
+      window.removeEventListener("mousemove", manageMouseMove);
+    };
+  }, [isHovered]);
 
   const template = ({rotate, scaleX, scaleY}) => {
     return `rotate(${rotate}) scaleX(${scaleX}) scaleY(${scaleY})` 
