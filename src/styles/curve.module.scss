@@ -32,12 +32,14 @@
     justify-content: center;
     position: fixed;
     z-index: 9999;
+    // top: 0;
+    // left: 0;
     background-color: #141516;
     svg{
         position: absolute;
         top: 0;
         width: 100%;
-        height: calc(100% + 300px);
+        height: calc(100vh + 600px);
         path{
             fill: #141516;
         }

@@ -134,11 +134,11 @@ const Index = () => {
                 </a>
             </div>
         </div>
-        <div ref={loader} className={styles.loader}>
+        {/* <div ref={loader} className={styles.loader}>
           <svg>
             <path ref={path}></path>
           </svg>
-      </div>
+      </div> */}
     </main>
   );
 };

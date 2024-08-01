@@ -33,9 +33,9 @@ export default function Home() {
   
   return (
     <main>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Curve />}
-        </AnimatePresence> */}
+        </AnimatePresence>
         <Index/>
     </main>
     // <main className={styles.main}>
