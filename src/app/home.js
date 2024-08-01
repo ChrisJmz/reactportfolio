@@ -120,7 +120,7 @@ const Index = () => {
                 </ul>
             </nav>
         <div className="flex py-10 flex-col justify-center items-center">
-            <h1 className="text-5xl font-medium md:text-6xl">Hi, i'm Christian Jimenez</h1>
+            <h1 className="text-5xl font-medium md:text-6xl">Hi, i&apos;m Christian Jimenez</h1>
             <h2 className="text-2xl py-4 md:text-5xl">Fullstack developper.</h2>
             <p className="text-md py-5 leading-7 text-gray-500 max-w-5xl mx-auto md:text-3xl z-1">
                 Explore my portfolio to see my projects and resume.
